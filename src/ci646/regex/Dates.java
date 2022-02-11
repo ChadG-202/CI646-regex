@@ -13,7 +13,7 @@ public class Dates {
     private static final String[] months = {"Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"};
     private static final String month = "([0-1][0-9])|(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)";
     private static final String day = "[0-3][0-9]";
-    private static final String dateRegex = "^(((("+day+")-("+month+"))|(("+month+")-("+day+")))-([0-2][0-9][0-9][0-9]))$"; 
+    private static final String dateRegex = "^(((("+day+")-("+month+"))|(("+month+")-("+day+")))-(\\d{4}))$"; 
     private static final String prompt = "Enter a date or press return to end: ";
 
     public static void main(String[] args) {
